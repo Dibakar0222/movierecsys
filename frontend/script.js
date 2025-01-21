@@ -8,7 +8,7 @@ async function getRecommendations() {
     }
 
     try {
-        const response = await fetch(`http://localhost:5000/recommend?movie=${encodeURIComponent(movieInput)}`);
+        const response = await fetch(`https://movierecsys-c5rz.onrender.com/recommend?movie=${encodeURIComponent(movieInput)}`);
         const data = await response.json();
 
         if (data.recommendations.length > 0) {
