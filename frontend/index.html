@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Movie Recommendation System</h1>
+        <input type="text" id="movieInput" placeholder="Enter your favorite movie">
+
+        <div>
+            <button class="button" onclick="getRecommendations()">
+                <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                </svg>
+                Get Recommendations
+            </button>
+        </div>
+        <div id="recommendations"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
